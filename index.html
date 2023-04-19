@@ -6,10 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
-    
 
-    <script src="js/index.js"></script>
+    <main>
+         <!-- 타이머 -->
+        <section>
+            <h1>타이머</h1>
+            <p id="timer">ttasasdasdas</p>
+        </section>
+
+        <!-- 로그인 -->
+        <section>
+            <div class="login-container">
+                <h1>로그인</h1>
+                <form id="login-form">
+                    <input id="userId" type="text" placeholder="아이디를 입력하세요" />
+                    <input id="userPw" type="password" placeholder="비밀번호를 입력하세요" />
+                    <button>로그인</button>
+                </form>
+            </div>
+            <div class="logged-in-container hide">
+                <p>
+                    <span id="user-id-holder"></span>
+                    님, 어서오세요
+                    <button id="logout" type="button">로그아웃</button>
+                </p>
+            </div>
+        </section>
+
+        <!-- todo 리스트 -->
+        <section>
+            <h1>TODO</h1>
+            <input id="insert-todo" type="text" placeholder="todo 입력칸"/>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <!-- 명언 프린팅 -->
+        <section>
+            <p id="quote">
+                <span class="text">절대 어제를 후회하지 마라 . 인생은 오늘의 나 안에 있고 내일은 스스로 만드는 것이다</span>
+                <span class="author">L.론허바드</span>
+            </p>
+        </section>
+
+        <!-- 메인 랜덤 이미지 -->
+        <section>
+            <img id="main-image" src="" alt="" />
+        </section>
+
+    </main>
+
+   
+
+<script src="js/timer.js"></script>
+<script src="js/login.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/quote.js"></script>
+<script src="js/images.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>
