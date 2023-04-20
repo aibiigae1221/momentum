@@ -2,9 +2,6 @@
 
 const loadWeather = () => {
 
-
-    
-
     navigator.geolocation.getCurrentPosition((position) => {
 
         // 지리정보 가져오기 성공
@@ -15,13 +12,8 @@ const loadWeather = () => {
 
         fetch(url)
             .then(response => response.json())
-            .then(json => {
-                console.log(json);
-                console.log(json.name);
-                console.log(json.weather[0].main);
-
+            .then(json => {             
                 const {locKorean, weatherKorean} = convertToKorean(json.name, json.weather[0].main);
-
 
                 document.querySelector("#location").innerText = locKorean;
                 document.querySelector("#weather").innerText = weatherKorean;
